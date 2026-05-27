@@ -83,8 +83,8 @@
     .service-card:hover .service-num { color: #000; }
 
     .port-card { position: relative; overflow: hidden; }
-    .port-card img { filter: grayscale(100%) contrast(1.05); transition: filter 200ms linear, transform 400ms ease; }
-    .port-card:hover img { filter: grayscale(0%) contrast(1.1); transform: scale(1.03); }
+    .port-card img { transition: transform 400ms ease; }
+    .port-card:hover img { transform: scale(1.03); }
     .port-overlay {
       position: absolute;
       inset: 0;
@@ -391,7 +391,7 @@
         <div class="lg:col-span-7">
           <div class="relative overflow-hidden border-2 border-white">
             <video autoplay muted loop playsinline style="width: 100%; height: 320px; object-fit: cover;">
-              <source src="assets/hero.mp4" type="video/mp4">
+              <source src="D:/Caffeine/PORTFOLIO/NEW/Final Cinematic-2.mp4" type="video/mp4">
             </video>
             <div class="absolute top-3 left-3 text-[10px] uppercase" style="letter-spacing: 0.3em; background: rgba(0,0,0,0.8); padding: 4px 8px; border: 1px solid #fff;">FILE_001.MP4</div>
             <div class="absolute bottom-3 right-3 text-[10px] uppercase bg-red-600 text-white px-2 py-1" style="letter-spacing: 0.3em;">LIVE / NOW</div>
@@ -516,99 +516,114 @@
             <span class="text-red-600">files.</span>
           </h2>
         </div>
-        <a href="#contact" class="self-start md:self-end inline-flex items-center gap-2 text-xs uppercase pb-1" style="letter-spacing: 0.25em; text-decoration: none; color: #fff; border-bottom: 2px solid #fff;">
-          View full archive
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-        </a>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
-        <a href="#contact" class="port-card group block lg:col-span-8" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
-          <div class="relative overflow-hidden">
-            <video autoplay muted loop playsinline style="width: 100%; aspect-ratio: 9/16; max-height: 80vh; object-fit: cover;">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <!-- 9:16 Portrait boxes -->
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 9/16; overflow: hidden;">
+            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
               <source src="assets/case1.mp4" type="video/mp4">
             </video>
             <div class="port-overlay"></div>
             <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 01</div>
-            <div class="absolute inset-x-0 bottom-0 p-5 md:p-7 bg-gradient-to-t from-black/95 via-black/60 to-transparent">
-              <div class="text-[10px] uppercase text-red-600 mb-2" style="letter-spacing: 0.3em; color: #ff2a2a;">OOH Campaign</div>
-              <div class="flex items-end justify-between gap-4">
-                <h3 class="font-display uppercase" style="font-size: 24px; line-height: 1; letter-spacing: -0.02em;">Customized Beverages</h3>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-              </div>
-              <div class="mt-2 text-xs" style="color: #d4d4d4;">+312% Brand Recall</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Brand Identity</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">La Casetta</h3>
             </div>
           </div>
         </a>
-        <a href="#contact" class="port-card group block lg:col-span-4" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
-          <div class="relative" style="aspect-ratio: 3/4; overflow: hidden;">
-            <img src="assets/case2.jpg" alt="Gully Labs" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 9/16; overflow: hidden;">
+            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <source src="assets/case2.mp4" type="video/mp4">
+            </video>
             <div class="port-overlay"></div>
             <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 02</div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-5 md:p-7">
-              <div class="text-[10px] uppercase mb-2" style="letter-spacing: 0.3em; color: #ff2a2a;">Social Campaign</div>
-              <div class="flex items-end justify-between gap-4">
-                <h3 class="font-display uppercase" style="font-size: 24px; line-height: 1; letter-spacing: -0.02em;">Gully Labs</h3>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-              </div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Social Campaign</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">Interioforest</h3>
             </div>
           </div>
         </a>
-        <a href="#contact" class="port-card group block lg:col-span-4" style="background: #000; text-decoration: none; color: #fff;">
-          <div class="relative" style="aspect-ratio: 4/3; overflow: hidden;">
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 9/16; overflow: hidden;">
+            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <source src="assets/case3.mp4" type="video/mp4">
+            </video>
+            <div class="port-overlay"></div>
+            <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 03</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Brand Identity</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">Idlay</h3>
+            </div>
+          </div>
+        </a>
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 9/16; overflow: hidden;">
             <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; display: block;">
               <source src="assets/case4.mp4" type="video/mp4">
             </video>
             <div class="port-overlay"></div>
             <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 04</div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-5 md:p-7">
-              <div class="text-[10px] uppercase mb-2" style="letter-spacing: 0.3em; color: #ff2a2a;">Organic Reach</div>
-              <h3 class="font-display uppercase" style="font-size: 24px; line-height: 1; letter-spacing: -0.02em;">New Project</h3>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Brand Identity</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">The Third Space Cafe</h3>
             </div>
           </div>
         </a>
-        <a href="#contact" class="port-card group block lg:col-span-4" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+        <!-- 4:5 Post boxes -->
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
           <div class="relative" style="aspect-ratio: 4/5; overflow: hidden;">
-            <img src="assets/case5.jpg" alt="ELC" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <img src="assets/case5.jpeg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             <div class="port-overlay"></div>
             <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 05</div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-5 md:p-7">
-              <div class="text-[10px] uppercase mb-2" style="letter-spacing: 0.3em; color: #ff2a2a;">Influencer Collab</div>
-              <div class="flex items-end justify-between gap-4">
-                <h3 class="font-display uppercase" style="font-size: 24px; line-height: 1; letter-spacing: -0.02em;">Nettspend</h3>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-              </div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Organic Reach</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">New Project</h3>
             </div>
           </div>
         </a>
-        <a href="#contact" class="port-card group block lg:col-span-4" style="background: #000; text-decoration: none; color: #fff;">
-          <div class="relative" style="aspect-ratio: 10/9; overflow: hidden;">
-            <img src="assets/case3.jpg" alt="F1lthy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 4/5; overflow: hidden;">
+            <img src="assets/case6.jpeg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             <div class="port-overlay"></div>
-            <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 03</div>
+            <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 06</div>
             <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-5 md:p-7">
-              <div class="text-[10px] uppercase mb-2" style="letter-spacing: 0.3em; color: #ff2a2a;">Brand Identity</div>
-              <div class="flex items-end justify-between gap-4">
-                <h3 class="font-display uppercase" style="font-size: 24px; line-height: 1; letter-spacing: -0.02em;">F1lthy</h3>
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-              </div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Influencer Collab</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">Redbull</h3>
             </div>
           </div>
         </a>
-        <div class="lg:col-span-4 p-8 flex flex-col justify-between" style="border: 2px solid #fff; background: #ff2a2a; color: #000; min-height: 280px;">
-          <div class="text-[10px] uppercase" style="letter-spacing: 0.3em;">[ Open slot ]</div>
-          <div>
-            <h3 class="font-display uppercase" style="font-size: 36px; line-height: 0.9; margin-bottom: 12px;">Your brand,<br>next.</h3>
-            <p class="text-sm">Q2 calendar has two seats left. Don't be polite — book it.</p>
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 4/5; overflow: hidden;">
+            <img src="assets/case7.jpeg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="port-overlay"></div>
+            <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 07</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Social Campaign</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">Gully Labs</h3>
+            </div>
           </div>
-          <a href="#contact" class="inline-flex items-center gap-2 text-xs uppercase pb-1" style="letter-spacing: 0.3em; color: #000; text-decoration: none; border-bottom: 2px solid #000; width: fit-content;">
-            Apply now
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </a>
-        </div>
+        </a>
+        <a href="#contact" class="port-card group block" style="border: 2px solid #fff; background: #000; text-decoration: none; color: #fff;">
+          <div class="relative" style="aspect-ratio: 4/5; overflow: hidden;">
+            <img src="assets/case8.jpeg" alt="Project" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div class="port-overlay"></div>
+            <div class="absolute top-3 left-3 text-[10px] uppercase px-2 py-1" style="letter-spacing: 0.3em; background: #000; border: 1px solid #fff;">CASE 08</div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent pointer-events-none"></div>
+            <div class="absolute inset-x-0 bottom-0 p-4">
+              <div class="text-[10px] uppercase" style="letter-spacing: 0.3em; color: #ff2a2a;">Brand Identity</div>
+              <h3 class="font-display uppercase" style="font-size: 20px; line-height: 1; letter-spacing: -0.02em; margin-top: 4px;">Caffeine</h3>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -687,7 +702,7 @@
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
         <div style="border: 2px solid #fff; aspect-ratio: 3/2; display: flex; align-items: center; justify-content: center; background: #0a0a0a; padding: 20px;">
-          <img src="assets/filthy.jpeg" alt="Filthy" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
+          <img src="assets/filthy.png" alt="Filthy" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
         </div>
         <div style="border: 2px solid #fff; aspect-ratio: 3/2; display: flex; align-items: center; justify-content: center; background: #0a0a0a; padding: 20px;">
           <img src="assets/interioforest.jpeg" alt="Interio Forest" style="max-width: 100%; max-height: 100%; object-fit: contain; display: block;">
